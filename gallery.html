@@ -7,13 +7,13 @@
     <title>parallax</title>
 
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/gallary.css">
+    <link rel="stylesheet" href="./css/gallery.css">
     <link rel="stylesheet" href="./css/components.css">
     <link rel="stylesheet" href="./css/parallax.css">
 </head>
 <body>
     <div id="header"></div>
-    <h1 class="gallary-title">Gallary</h1>
+    <h1 class="gallary-title">Gallery</h1>
     <div class="img-gallary">
         <div class="img-item">
             <img src="./assets/img_1.jpg" alt="Image 1">
@@ -46,7 +46,19 @@
             <img src="./assets/img_10.jpg" alt="Image 10">
         </div>
     </div>
+
+    <!-- Popup Modal -->
+    <div id="sliderprops" class="modal">
+        <img class="modal-content" id="modalImg">
+        <div class="caption" id="caption"></div>
+        <button id="prevBtn">&#10094;</button>
+        <button id="nextBtn">&#10095;</button>
+        <span class="close">&times;</span>
+    </div>
+
     <div id="footer"></div>
+    <script src="js/gallery.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 </html>
