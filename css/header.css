@@ -1,0 +1,89 @@
+/* ======= Navbar Styles ======= */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+  border-bottom: .5px solid #a5abb3;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+nav .logo img {
+  height: 50px;
+  max-width: 100%;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav .nav-links li {
+  margin: 0 0.5rem;
+}
+
+nav .nav-links li .nav-menu {
+  color: var(--text-dark);
+  transition: color 0.3s ease;
+}
+
+nav .nav-links li a:hover {
+  color: var(--secondary-color);
+}
+
+/* Toggle on Mobile */
+nav .toggle-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+nav .toggle-menu:hover {
+  color: var(--secondary-color);
+}
+
+/* ======= Mobile Styles ======= */
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+  }
+  nav .toggle-menu {
+    display: block;
+  }
+
+  nav .nav-links {
+    display: none;
+    flex-direction: column;
+    width: calc(100% - 60%);
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    column-gap: 10px;
+    position: absolute;
+    top: 30%;
+    right: 2.5rem;
+    z-index: 99;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.3s ease;
+  }
+
+  nav .nav-links.active {
+    display: flex;
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+  nav .nav-links li a {
+    color: var(--text-light);
+  }
+}

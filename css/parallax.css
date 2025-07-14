@@ -1,9 +1,9 @@
 @import url('./variables.css');
 
 :root {
-  --parallax-bg-url_1: url('../assets/img_1.jpg');
-  --parallax-bg-url_2: url('../assets/img_2.jpg');
-  --parallax-bg-url_3: url('../assets/img_3.jpg');
+  --parallax-bg-url_1: url('../assets/img_1.webp');
+  --parallax-bg-url_2: url('../assets/img_2.webp');
+  --parallax-bg-url_3: url('../assets/img_3.webp');
 }
 
 .parallax-1, .parallax-2, .parallax-3 {
