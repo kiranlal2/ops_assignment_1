@@ -11,7 +11,7 @@ section {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-    /* width: 100%; */
+    width: 100%;
     max-width: 400px;
 }
 
@@ -36,6 +36,30 @@ input {
     border-radius: 6px;
     border: 1px solid #cbd5e1;
 }
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.remember-me {
+  display: flex;
+}
+input[type="checkbox"] {
+  transform: scale(0.4);
+}
+
+
+.forgot-password {
+  text-decoration: none;
+  color: #1d4ed8;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
 
 button[type="submit"] {
     width: 100%;

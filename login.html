@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
-
-    <link rel="stylesheet" href="./css/login.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Log in</title>
+  <link rel="stylesheet" href="./css/login.css" />
 </head>
 <body>
-    <section>
-        <div class="login">
-            <h1>Login Page</h1>
+  <section>
+    <div class="login">
+      <h1>Welcome Back</h1>
 
-            <form action="index.html" method="POST">
-                <div>
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your Name or Email" required />
-                </div>
-
-                <div>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your Password" required />
-                </div>
-
-                <button type="submit">Login</button>
-            </form>
-
-            <div class="social-login">
-                <h1>or</h1>
-                <button class="google-btn">
-                    Continue with Google
-                </button>
-                <button class="facebook-btn">
-                    Continue with Facebook
-                </button>
-            </div>
-
-            <p>Don't have an account? <a href="/">Register here</a></p>
+      <form action="index.html" method="POST">
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Enter your Name or Email" required />
         </div>
-    </section>
+
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your Password" required />
+        </div>
+
+        <!-- Keep me logged in + Forgot password -->
+        <div class="login-options">
+          <label class="remember-me">
+            <input type="checkbox" name="remember">Keep logged in</input>
+          </label>
+          <a href="#" class="forgot-password">Forgot password?</a>
+        </div>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <div class="social-login">
+        <h1>or</h1>
+        <button class="google-btn">Continue with Google</button>
+        <button class="facebook-btn">Continue with Facebook</button>
+      </div>
+
+      <p>Don't have an account? <a href="/">Sign Up here</a></p>
+    </div>
+  </section>
 </body>
 </html>
